@@ -1,0 +1,50 @@
+/* Custom styles for this component */
+.navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .display-4 {
+    color: #2f855a;
+  }
+  
+  .form-control {
+    width: 75%;
+  }
+  
+  .btn-success {
+    background-color: #2f855a;
+  }
+  
+  .icon {
+    max-width: 50px;
+  }
+
+
+  .contentzindex{
+    z-index: 999;
+    margin-left: 4vw;
+  }
+
+  @media (min-width: 640px) {
+    .icons {
+       margin: 0px;
+    }
+}
+.img-abstract {
+  position: absolute;
+  top: 90px;
+  left: -90px;
+  width: 200px;
+  height: 150px;
+  z-index: 999;
+}
+
+/* Media query for smaller screens (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  .img-abstract {
+    width: 100vw;
+    height: auto;
+    left: -50px; /* You can adjust the position for smaller screens */
+  }
+}
+  

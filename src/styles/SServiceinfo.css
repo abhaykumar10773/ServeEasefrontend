@@ -1,0 +1,56 @@
+.contentbox {
+    border: solid black 1px;
+    border-radius: 5px;
+  }
+  
+  .steps {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  @media (max-width: 768px) {
+    .hgf {
+      flex-direction: column;
+    }
+  
+    .contentbox, .steps {
+      width: 100%;
+      flex-direction: row;
+      
+    }
+  }
+
+  .img{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .roundeimg{
+    border-radius: 60%;
+  }
+  .desc{
+    width: 70%;
+    height: 100%;
+    
+  }
+
+
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: row;
+    }
+  
+    .img, .desc {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .main {
+      display: block; /* Removes flex, items stack vertically */
+    }
+  }

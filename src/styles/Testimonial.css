@@ -1,0 +1,30 @@
+.testimonial-carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .testimonial-box {
+    min-width: 300px; /* Width of each testimonial box */
+    transition: transform 0.5s ease;
+  }
+  
+  .testimonial-carousel .testimonial-box {
+    flex: 1;
+    max-width: 300px; /* Box width to fit 3 in a row */
+  }
+  
+  .testimonial-carousel {
+    transform: translateX(-100%);
+    animation: slide 3s infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

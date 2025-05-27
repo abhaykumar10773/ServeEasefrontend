@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+
+.pop{
+     background-color: none;
+     justify-items: center;
+     align-items: center;
+     align-content: center;
+     margin: 0 10% 10% ;
+     top: 4vw;
+     border-radius: 20px;
+     overflow-y: auto;
+     right: 0;
+     z-index: 999;
+     animation: slideRight 1s ease forwards;
+   }
+
+   .relative {
+    background: white;
+  max-height: 90vh;
+  
+  overflow-y: auto; /* Scroll the content */
+  padding: 20px;
+  
+
+   }
+ 
+   @keyframes slideRight {
+     0% {
+         transform: translatey(-100px);
+         opacity: 0;
+     }
+     100%{
+         transform: translatey(15px);
+         opacity: 1s;
+     }
+ }
+
+
+  
