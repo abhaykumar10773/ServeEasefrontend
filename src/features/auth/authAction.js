@@ -1,7 +1,7 @@
 // src/features/auth/authActions.js
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { loginUserApi , registerUserApi ,logoutUserApi,getUserDetailsApi } from '../../api/userApi.js';
+import { loginUserApi , registerUserApi ,logoutUserApi,getUserDetailsApi } from '../../Api/userApi.js';
 
 export const loginUser = createAsyncThunk('auth/loginUser', async (credentials, { rejectWithValue }) => {
   try {
