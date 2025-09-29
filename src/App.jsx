@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { logoutUser } from './features/auth/authAction.js' // path as per your structure
 import { setCredentials } from './features/auth/authSlice.js'; // path as per your structure
-import axiosInstance from './api/axiosConfig';
+import axiosInstance from './api/axiosConfig.js';
 
 function App() {
   const dispatch = useDispatch();
