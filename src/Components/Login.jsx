@@ -22,9 +22,10 @@ export function SignUpOne() {
 
   useEffect(() => {
   if (isLoggedIn) {
-    setShow(false);
+    setShow(false);  // Modal band ho jaaye
+    dispatch(setLoading(false)); // Ye bhi yahi pe
   }
-}, [isLoggedIn]);
+}, [isLoggedIn, dispatch]);
   const handleClose = () => setShow(false);
 
   const handleChange = (e) => {
