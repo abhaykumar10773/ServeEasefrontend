@@ -2,7 +2,7 @@ import ss2image from "../assets/images/ss2image.png";
 import "../styles/SServiceinfo.css";
 import Cleankitchen from "../assets/images/Cleankitchen.jpeg";
 import CustomSeparator from "../Components/bredcrumbsection";
-import cleanBathroom from "../assets/images/cleanBathroom.jpg";
+import cleanBathroom from "../assets/images/cleanbathroom.jpg";
 import clcleanlivingroom from "../assets/images/clcleanlivingroom.jpg";
 import clbedroom from "../assets/images/clbedroom.jpeg";
 import clwindow from "../assets/images/clwindow.jpeg";
