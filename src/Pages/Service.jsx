@@ -79,7 +79,7 @@ export default function Service() {
             <div className="text-center fw-bold fs-1 text-success pt-4">
               <h1>Our Services</h1>
             </div>
-          <div className="container my-4">
+         <div className="container my-4">
   <div className="row justify-content-center">
     {services.map((service) => (
       <div
@@ -87,18 +87,27 @@ export default function Service() {
         className="col-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center"
       >
         <div
-          className="card text-center m-3 rounded shadow-sm"
+          className="card text-center m-3 rounded shadow-sm overflow-hidden"
           style={{ width: "100%", maxWidth: "22rem" }}
         >
+          {/* Card Image */}
           <img
             src={service.image}
-            className="card-img-top"
+            className="card-img-top w-100"
             alt={service.title}
-            style={{ height: "200px", objectFit: "cover" }}
+            style={{
+              height: "220px",
+              objectFit: "cover",
+              borderBottom: "1px solid #eee",
+            }}
           />
-          <div className="card-body">
-            <h1 className="card-title fs-4 fw-bold">{service.title} Service</h1>
-            <p className="card-text">{service.description}</p>
+
+          {/* Card Content */}
+          <div className="card-body d-flex flex-column justify-content-between">
+            <h1 className="card-title fs-4 fw-bold mt-2">
+              {service.title} Service
+            </h1>
+            <p className="card-text mt-2">{service.description}</p>
             <Link
               to={`/Service/${service.path}`}
               className="btn btn-outline-success mt-3"
@@ -114,6 +123,7 @@ export default function Service() {
 </div>
 
 
+
           </div>
 
           <Sswhyuseservice />
@@ -124,5 +134,6 @@ export default function Service() {
     </>
   );
 }
+
 
 
