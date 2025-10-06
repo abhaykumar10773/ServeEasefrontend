@@ -79,26 +79,40 @@ export default function Service() {
             <div className="text-center fw-bold fs-1 text-success pt-4">
               <h1>Our Services</h1>
             </div>
-            <div className="row text-center">
-              {services.map((service) => (
-                <div className="col-md-4 text-center" key={service.id}>
-                  <div className="card text-center m-3 mx-3 rounded" style={{ width: "24rem" }}>
-                    <img src={service.image} className="card-img-top h-28" alt={service.title} />
-                    <div className="card-body">
-                      <h1 className="card-title fs-3 fw-bold">{service.title} Service</h1>
-                      <p className="card-text">{service.description}</p>
-                      <Link
-                        to={`/Service/${service.path}`}
-                        className="btn btn-outline-success mt-3"
-                        onClick={() => handleBookNow(service.title)}
-                      >
-                        Book now
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+           <div className="container my-4">
+  <div className="row justify-content-center">
+    {services.map((service) => (
+      <div
+        className="col-12 col-sm-6 col-md-4 d-flex justify-content-center"
+        key={service.id}
+      >
+        <div
+          className="card text-center m-3 rounded shadow-sm"
+          style={{ width: "100%", maxWidth: "22rem" }}
+        >
+          <img
+            src={service.image}
+            className="card-img-top"
+            alt={service.title}
+            style={{ height: "200px", objectFit: "cover" }}
+          />
+          <div className="card-body">
+            <h1 className="card-title fs-4 fw-bold">{service.title} Service</h1>
+            <p className="card-text">{service.description}</p>
+            <Link
+              to={`/Service/${service.path}`}
+              className="btn btn-outline-success mt-3"
+              onClick={() => handleBookNow(service.title)}
+            >
+              Book Now
+            </Link>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
           </div>
 
           <Sswhyuseservice />
@@ -109,3 +123,4 @@ export default function Service() {
     </>
   );
 }
+
