@@ -79,12 +79,12 @@ export default function Service() {
             <div className="text-center fw-bold fs-1 text-success pt-4">
               <h1>Our Services</h1>
             </div>
-           <div className="container my-4">
+          <div className="container my-4">
   <div className="row justify-content-center">
     {services.map((service) => (
       <div
-        className="col-12 col-sm-6 col-md-4 d-flex justify-content-center"
         key={service.id}
+        className="col-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center"
       >
         <div
           className="card text-center m-3 rounded shadow-sm"
@@ -113,6 +113,7 @@ export default function Service() {
   </div>
 </div>
 
+
           </div>
 
           <Sswhyuseservice />
@@ -123,4 +124,5 @@ export default function Service() {
     </>
   );
 }
+
 
